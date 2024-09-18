@@ -7,7 +7,7 @@ function Navbar() {
       <div className="logo-container">
         <img 
           src="https://via.placeholder.com/100" 
-          alt="Logo Placeholder" 
+          alt="CAP painting" 
           className="logo"
         />
       </div>
