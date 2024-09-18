@@ -1,18 +1,35 @@
-.App {
+/* General Styling for All Devices */
+.section {
+  padding: 80px 20px;
   text-align: center;
-  min-height: 100vh; /* Ensure the App takes at least full viewport height */
-  display: flex;
-  flex-direction: column;
 }
 
-main {
-  flex-grow: 1; /* Allow the main content to grow and shrink dynamically */
-  padding: 20px;
+/* Ensure images scale down on smaller devices */
+.section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden; /* Ensure no horizontal scroll */
+/* Mobile Styling for Small Screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack the navigation links vertically on mobile */
+    align-items: center;
+  }
+
+  .section {
+    padding: 50px 10px;
+  }
+}
+
+/* For even smaller devices like phones */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 40px 10px;
+  }
 }

@@ -1,0 +1,21 @@
+/* Container for images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+    grid-gap: 20px; /* Space between images */
+    padding: 20px;
+  }
+  
+  /* Ensure images scale well */
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Adjust grid to a single column for smaller screens */
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  }

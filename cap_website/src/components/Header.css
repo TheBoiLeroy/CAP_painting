@@ -1,23 +1,51 @@
-header {
+/* Style the entire navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #333;
-    padding: 1rem;
   }
   
-  nav ul {
+  /* Container for the logo */
+  .logo-container {
+    flex-shrink: 0; /* Prevent logo from shrinking */
+  }
+  
+  /* Style the logo image */
+  .logo {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+  }
+  
+  /* Navigation links */
+  .nav-links {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    gap: 20px; /* Add space between links */
   }
   
-  nav ul li {
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
+  .nav-links li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px;
+    transition: color 0.3s ease;
   }
   
-  nav ul li a:hover {
-    text-decoration: underline;
+  .nav-links li a:hover {
+    color: #f0f0f0;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack logo and links on mobile */
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px; /* Adjust spacing on mobile */
+    }
   }
