@@ -1,0 +1,50 @@
+.estimate-request {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow-y: auto; /* Ensure the form itself can scroll if content grows */
+  }
+  
+  .estimate-request form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .estimate-request form div {
+    margin-bottom: 15px;
+  }
+  
+  .estimate-request label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .estimate-request input,
+  .estimate-request textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .estimate-request textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .estimate-request button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .estimate-request button:hover {
+    background-color: #218838;
+  }

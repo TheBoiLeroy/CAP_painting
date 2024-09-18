@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  min-height: 100vh; /* Ensure the App takes at least full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Allow the main content to grow and shrink dynamically */
+  padding: 20px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Ensure no horizontal scroll */
+}
